@@ -1,0 +1,14 @@
+body {
+	background-image: url("../img/fond.jpeg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.carte{
+	height: 200px;
+	width: 200px;
+	padding-bottom:1px;
+	padding-right: 1px;
+}
