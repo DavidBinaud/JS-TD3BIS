@@ -3,9 +3,10 @@ class Carte{
 		this.sprite = document.getElementById("image_" + srt);
 		this.src = "img/" + src + ".png";
 		this.revealed = false;
-		this.found = true;
+		this.found = false;
+		this.id = src;
 		this.sprite.onclick = function(){
-			mem.action(this);
+			mem.hideOrReveal(this);
 		}
 	}
 
@@ -17,5 +18,13 @@ class Carte{
 	hide(){
 		this.revealed = false;
 		this.sprite.src = "img/dos.jpg";
+	}
+
+	reverse(){
+		if(this.revealed){
+			this.hide();
+		}else{
+			this.reveal();
+		}
 	}
 }
